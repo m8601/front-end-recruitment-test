@@ -1,0 +1,117 @@
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	padding: 0;
+	color: #000;
+
+}
+
+
+
+//  Style for number in circle
+span.circle {
+  background: #000;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: center;
+  width: 1.6em;
+  font-size: 1.2em; 
+}
+
+
+// Checkout Tab
+.checkout {
+	padding: 20px 0;
+	h4 {
+		font-size: 1.2em;
+		font-weight: bold;
+		line-height: 1.6em;
+	}
+	.inline {
+		display: inline-block;
+	}
+	.row {
+		margin: 10px 0;
+	}
+	.form-field {
+		background-color: #fff;
+		width: 49%;
+		margin: 10px auto 10px 0;
+		padding: 5px 10px;
+		border-radius: 3px;
+		box-shadow: 0 2px #ccc;
+		label {
+			display: block;
+		}
+		input, select {
+			border: none;
+			width: 100%;
+		}
+		select {
+			background: #fff;
+			font-size: 16px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background: url(http://image.flaticon.com/icons/svg/32/32195.svg) 95% / 15% no-repeat #fff;
+			background-size: 10px;	
+			}
+		}
+	.full-width {
+		width: 100%;
+	}
+	.stiches {
+		padding: 10px;
+		margin: 1px;
+		color: #fff;
+		font-size: 21px;
+		font-weight: bold;
+		line-height: 1.3em;
+		border: 1px dashed #333;
+		border-radius: 5px;
+		box-shadow: 0 0 0 2px #fff, 2px 0 #ccc;
+		font-weight: normal;
+	}
+
+	.order-info, .cash-info{
+		border-bottom: 1px dashed #333;
+	}
+	.wrap {
+		h4 {
+			font-size: .6em;
+		}
+		.col-md-6 {
+			padding: 0;
+		}
+	}
+
+	.payment {
+		h4 {
+			display: inline-block;
+		}
+		img {
+			width: 10px;
+			margin: 1px 3px;
+			line-height: 1.6;
+			position: relative;
+			top: -3px;
+		}
+	}
+	.button {
+		background: #6BD400;
+		box-shadow: 0 2px #5CB204;
+		color: #fff;
+		height: 50px;
+		font-size: 1.2em;
+		font-weight: bold;
+		span {
+			padding: 0 5px;
+		}
+	}
+}
