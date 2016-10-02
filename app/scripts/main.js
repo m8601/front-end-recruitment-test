@@ -17,6 +17,7 @@
  *
  */
 /* eslint-env browser */
+/* eslint linebreak-style: [2, "windows"] */
 (function() {
   'use strict';
 

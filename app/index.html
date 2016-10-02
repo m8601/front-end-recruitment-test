@@ -234,7 +234,7 @@
         <div id="checkout" class="checkout">
           <div class="container">
             <!-- Form  -->
-            <form action="" method="POST">
+            <form action="" method="" name="contactForm" onsubmit="return validateForm();">
               <div class="row">
                 <div class="col-md-1 text-right"><span class="circle">1</span></div>
                 <div class="col-md-7"><h4>PERSONAL INFORMATION</h4></div>
@@ -268,7 +268,7 @@
                     </div>
                     <div class="form-field full-width">
                       <label>Phone Number</label>
-                      <input type="tel" name="phone" placeholder="(000)000-00-00">
+                      <input type="tel" name="phone" placeholder="000-00-00">
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -406,6 +406,37 @@
     <!-- build:js(app/) ../../scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <script>
+      function validateForm() {
+        var form = document.contactForm;
+        if (form.firstName.value === '' || form.lastName.value === '' || form.mail.value === ''
+          || form.postal.value === '' || form.phone.value === '' || form.creditCardNumber.value === ''
+          || form.securityCode.value === '' || form.expirationDate.value === '') {
+          alert('Please fill all fields!');
+          return false;
+        } else if (form.postal.value.length != 5){
+          alert('Postal Code is incorrect');
+          return false;
+        } else if (form.phone.value.length != 7){
+          alert('Phone number is incorrect');
+          return false;
+        } else if (form.creditCardNumber.value.length != 16){
+          alert('Credit card number is incorrect');
+          return false;
+        } else if (form.securityCode.value.length != 3){
+          alert('Security code is incorrect');
+          return false;
+        } else if (form.expirationDate.value.length != 5){
+          alert('Expiration date is incorrect');
+          return false;
+        } 
+        else {
+          alert('Thank You for Purchase');
+          return true;
+        }
+      }
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
